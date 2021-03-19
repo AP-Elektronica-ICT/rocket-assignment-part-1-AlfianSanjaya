@@ -1,1 +1,2 @@
-"# rocket-assignment-part-1-AlfianSanjaya" 
+# Rocket assignment
+## Alfian Sanjaya
