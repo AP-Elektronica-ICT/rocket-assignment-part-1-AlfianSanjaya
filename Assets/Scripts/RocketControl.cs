@@ -10,6 +10,7 @@ public class RocketControl : MonoBehaviour
 
     private bool power = false;
     private Rigidbody rb;
+    private int coins = 0;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class RocketControl : MonoBehaviour
     {
         if (power)
         {
-            Debug.Log("Thrust activated");
+            //Debug.Log("Thrust activated");
             rb.AddRelativeForce(Vector3.up * thrusterForce * Time.deltaTime);
         }
 
@@ -43,4 +44,13 @@ public class RocketControl : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+
+/*    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Coin")
+        {
+            coins++;
+            Debug.Log(coins);
+        }
+    }*/
 }
