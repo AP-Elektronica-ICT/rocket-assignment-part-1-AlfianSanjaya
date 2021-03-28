@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
 	
@@ -55,8 +56,8 @@ public class Health : MonoBehaviour {
 				switch(onLivesGone)
 				{
 				case deathAction.loadLevelWhenDead:
-						Debug.Log("Load level 1");
-					Application.LoadLevel(LevelToLoad);
+					Score.currentScore = 0;
+					SceneManager.LoadScene(LevelToLoad);
 					break;
 				case deathAction.doNothingWhenDead:
 					// do nothing, death must be handled in another way elsewhere
