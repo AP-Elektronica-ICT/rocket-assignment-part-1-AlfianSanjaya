@@ -37,5 +37,10 @@ public class RocketControl : MonoBehaviour
             Debug.Log("Thrust activated");
             rb.AddRelativeForce(Vector3.up * thrusterForce * Time.deltaTime);
         }
+
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
