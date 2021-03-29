@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,19 +8,15 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] float restartDelay = 1f;
     public GameObject completeLevelUI;
-    
+    public GameObject score;
+    Text scoreText;
+
     public void CompleteLevel()
     {
-        completeLevelUI.SetActive(true);
-        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextLevel != 2)
-        {
-            SceneManager.LoadScene(nextLevel);
-        } else
-        {
-            Debug.Log("Game completed");
-        }
-       
+        if (score != null)
+            scoreText = score.GetComponent<Text>();
+        scoreText.text = Score.currentScore.ToString();
+        completeLevelUI.SetActive(true);  
     }
 
     public void EndGame()
