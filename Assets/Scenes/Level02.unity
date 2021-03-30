@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.43293878, g: 0.49463814, b: 0.6509434, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 3c227f585a93d304191506e209edb95d, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 49d1985b525cb054f8afe2d09a9cc918, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1615,7 +1615,7 @@ Camera:
   m_GameObject: {fileID: 1256779212}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 1, g: 0.8100775, b: 0.5613208, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68d01abfe9b97d4096b86aa472da73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0, z: -8}
+  offset: {x: 0, y: 0, z: -20}
 --- !u!1001 &1258884383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1839,7 +1839,7 @@ PrefabInstance:
     - target: {fileID: 4733382929992723314, guid: 3a9b7d82d83115b4989ce52b22944739,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4733382929992723314, guid: 3a9b7d82d83115b4989ce52b22944739,
         type: 3}
