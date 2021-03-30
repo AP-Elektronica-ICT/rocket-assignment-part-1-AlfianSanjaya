@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public void CompleteLevel()
     {
+        Debug.Log("Trigger complete level");
         if (score != null)
             scoreText = score.GetComponent<Text>();
         scoreText.text = Score.currentScore.ToString();
