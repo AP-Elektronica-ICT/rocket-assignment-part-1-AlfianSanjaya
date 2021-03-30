@@ -8,7 +8,7 @@ public class CoinPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //GameManager.currentScore += value;
+            AudioManager.Instance.Play("CoinPickup");
             Score.currentScore += value;
             Destroy(gameObject);
         }
