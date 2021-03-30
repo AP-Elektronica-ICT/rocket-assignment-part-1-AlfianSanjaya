@@ -10,6 +10,7 @@ public class RocketControl : MonoBehaviour
 
     private bool power = false;
     private Rigidbody rb;
+    private bool thrust = false;
 
     private void Start()
     {
@@ -21,6 +22,17 @@ public class RocketControl : MonoBehaviour
         float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
         float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
         power = Input.GetKey(KeyCode.Space);
+
+        if (power && AudioManager.Instance.IsPlaying("RocketThrust") == false)
+        {
+            Debug.Log("Play sound");
+            AudioManager.Instance.Play("RocketThrust");
+        }
+        else if (power == false && AudioManager.Instance.IsPlaying("RocketThrust"))
+        {
+            Debug.Log("Stop sound");
+            AudioManager.Instance.Stop("RocketThrust");
+        }
 
         if (!Mathf.Approximately(tiltAroundZ, 0f) || !Mathf.Approximately(tiltAroundX, 0f))
         {
@@ -34,7 +46,6 @@ public class RocketControl : MonoBehaviour
     {
         if (power)
         {
-            //Debug.Log("Thrust activated");
             rb.AddRelativeForce(Vector3.up * thrusterForce * Time.deltaTime);
         }
     }
