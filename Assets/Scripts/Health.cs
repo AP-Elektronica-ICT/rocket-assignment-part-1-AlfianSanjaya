@@ -38,7 +38,8 @@ public class Health : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (healthPoints <= 0) {				// if the object is 'dead'
+		if (healthPoints <= 0) {                // if the object is 'dead'
+			AudioManager.Instance.Play("RocketDead");
 			numberOfLives--;					// decrement # of lives, update lives GUI
 			
 			if (explosionPrefab!=null) {

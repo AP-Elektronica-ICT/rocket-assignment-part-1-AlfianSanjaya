@@ -52,7 +52,13 @@ MonoBehaviour:
     Source: {fileID: 0}
   - Name: CoinPickup
     Clip: {fileID: 8300000, guid: 80bfcac09cb62b042897e4f210e2112d, type: 3}
-    Volume: 0.076
+    Volume: 0.5
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: RocketDead
+    Clip: {fileID: 8300000, guid: 4d563f15e2e09be4c8908c592e0e3f2e, type: 3}
+    Volume: 0.046
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
