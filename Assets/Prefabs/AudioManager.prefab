@@ -46,7 +46,7 @@ MonoBehaviour:
   Sounds:
   - Name: RocketThrust
     Clip: {fileID: 8300000, guid: b4575349bc3a12442852e1c0f236463d, type: 3}
-    Volume: 0.076
+    Volume: 0.051
     Pitch: 1
     Loop: 1
     Source: {fileID: 0}
@@ -58,7 +58,13 @@ MonoBehaviour:
     Source: {fileID: 0}
   - Name: RocketDead
     Clip: {fileID: 8300000, guid: 4d563f15e2e09be4c8908c592e0e3f2e, type: 3}
-    Volume: 0.046
+    Volume: 0.544
     Pitch: 1
     Loop: 0
+    Source: {fileID: 0}
+  - Name: Theme
+    Clip: {fileID: 8300000, guid: ae292141186cfd44ebf19efc13b29145, type: 3}
+    Volume: 0.046
+    Pitch: 1
+    Loop: 1
     Source: {fileID: 0}
