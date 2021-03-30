@@ -15,9 +15,4 @@ public class LevelComplete : MonoBehaviour
             Debug.Log("Game completed");
         }
     }
-
-    public void EndGame()
-    {
-        Debug.Log("Game completed");
-    }
 }
