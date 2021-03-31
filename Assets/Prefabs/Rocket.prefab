@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 4136323577920929662}
   - component: {fileID: 4136323577920929663}
   - component: {fileID: 4136323577920929656}
-  - component: {fileID: 4136323577920929660}
   - component: {fileID: 4136323577920929661}
+  - component: {fileID: 973178275}
+  - component: {fileID: 973178276}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Player
@@ -105,20 +106,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4136323577920929660
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4136323577920929657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &4136323577920929661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +120,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrusterForce: 1000
   tiltAngle: 100
+--- !u!64 &973178275
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323577920929657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 0}
+--- !u!136 &973178276
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323577920929657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4136323578003755199
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +161,7 @@ GameObject:
   - component: {fileID: 4136323578003755187}
   - component: {fileID: 4136323578003755184}
   - component: {fileID: 4136323578003755185}
+  - component: {fileID: 1037376977}
   m_Layer: 0
   m_Name: Legs (1)
   m_TagString: Untagged
@@ -926,6 +942,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &1037376977
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323578003755199}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4136323578023216402
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +969,7 @@ GameObject:
   - component: {fileID: 4136323578023216406}
   - component: {fileID: 4136323578023216407}
   - component: {fileID: 4136323578023216404}
+  - component: {fileID: 687288221}
   m_Layer: 0
   m_Name: Cone
   m_TagString: Untagged
@@ -1483,6 +1514,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &687288221
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323578023216402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4136323578870620345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1541,7 @@ GameObject:
   - component: {fileID: 4136323578870620349}
   - component: {fileID: 4136323578870620346}
   - component: {fileID: 4136323578870620347}
+  - component: {fileID: 133891270}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -3054,6 +3100,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &133891270
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323578870620345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4136323579579613214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3067,6 +3127,7 @@ GameObject:
   - component: {fileID: 4136323579579613202}
   - component: {fileID: 4136323579579613203}
   - component: {fileID: 4136323579579613200}
+  - component: {fileID: 1643052605}
   m_Layer: 0
   m_Name: Engine
   m_TagString: Untagged
@@ -9010,6 +9071,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!64 &1643052605
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323579579613214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4136323579929280439
 GameObject:
   m_ObjectHideFlags: 0
@@ -9023,6 +9098,7 @@ GameObject:
   - component: {fileID: 4136323579929280427}
   - component: {fileID: 4136323579929280424}
   - component: {fileID: 4136323579929280425}
+  - component: {fileID: 195577767}
   m_Layer: 0
   m_Name: Legs
   m_TagString: Untagged
@@ -9801,6 +9877,20 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!64 &195577767
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4136323579929280439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &5543557869739732419
