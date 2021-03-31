@@ -332,6 +332,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4a1432851ba1384390982be4ddb20b6, type: 3}
+--- !u!1 &344947341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7401445802988656727, guid: 02f492c6611db544a9d940724d5e041a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7401445801999067931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &344947342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344947341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df63c248ec98c0948be9c0fc2c4fc432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &380879004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3258,17 +3276,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2008520148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60bc932935205844eb1ebc5b6ecbde75, type: 3}
+  m_Script: {fileID: 11500000, guid: df63c248ec98c0948be9c0fc2c4fc432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  damageOnTrigger: 1
-  damageOnCollision: 0
-  continuousDamage: 0
-  continuousTimeBetweenHits: 0
-  destroySelfOnImpact: 0
-  delayBeforeDestroy: 0
-  explosionPrefab: {fileID: 0}
 --- !u!1001 &2095440947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3405,5 +3415,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Black Orb
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7401445802988656713, guid: 02f492c6611db544a9d940724d5e041a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 02f492c6611db544a9d940724d5e041a, type: 3}

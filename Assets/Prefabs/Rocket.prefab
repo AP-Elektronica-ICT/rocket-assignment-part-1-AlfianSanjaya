@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4136323577920929663}
   - component: {fileID: 4136323577920929656}
   - component: {fileID: 4136323577920929660}
-  - component: {fileID: 4136323577920929658}
   - component: {fileID: 4136323577920929661}
   m_Layer: 0
   m_Name: Rocket
@@ -120,27 +119,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &4136323577920929658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4136323577920929657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46a4d3a4549518b44a0efd2dc93d7606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPoints: 1
-  respawnHealthPoints: 1
-  numberOfLives: 1
-  isAlive: 1
-  explosionPrefab: {fileID: 0}
-  onLivesGone: 0
-  LevelToLoad: Level01
-  respawnPosition: {x: 0, y: 0, z: 0}
-  respawnRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4136323577920929661
 MonoBehaviour:
   m_ObjectHideFlags: 0

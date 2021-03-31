@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
 
-    [SerializeField] float restartDelay = 1f;
+    public float restartDelay = 1f;
     public GameObject completeLevelUI;
     public GameObject score;
     Text scoreText;
@@ -20,18 +20,10 @@ public class GameManager : MonoBehaviour
         completeLevelUI.SetActive(true);  
     }
 
-    public void EndGame()
+    public void Restart()
     {
-        if (gameHasEnded)
-        {
-            gameHasEnded = true;
-            Debug.Log("GAME OVER");
-            Invoke("Restart", restartDelay);
-        }
-    }
-
-    void Restart()
-    {
+        Debug.Log("Restart level");
+        AudioManager.Instance.Play("RocketDead");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
